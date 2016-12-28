@@ -4,20 +4,20 @@
 	Github:https://github.com/zlocal/Powershell-Github-Shell
 	Demo Result Gist:https://gist.github.com/zlocal/1d449f3c195531c8cafbebfe808ea46e
 
-使用方法：</br>
+使用方法：<br>
 #### 1，创建github账户，访问https://github.com/settings/tokens/new，选中 gist   Create gists ，创建访问Gists的token.</br>
 #### 2, 访问 https://gist.github.com/ ，创建一个Gist，属性最好为private,只有自己能访问查看结果，名称为cmd.例：</br>
 为了展示，我设置了public https://gist.github.com/zlocal/1d449f3c195531c8cafbebfe808ea46e
-		###### Command:"time /T"
-		###### ReadFile:"c:/windows/temp/1.txt"
-		###### WriteFile:"http://www.github.com/raw/1.zip c:/wnidows/temp/2.txt"
-		###### Powershell:"Get-Process | Out-String"
-		###### Command:"whoami"
+		Command:"time /T"
+		ReadFile:"c:/windows/temp/1.txt"
+		WriteFile:"http://www.github.com/raw/1.zip c:/wnidows/temp/2.txt"
+		Powershell:"Get-Process | Out-String"
+		Command:"whoami"
 其中
-Command后是想要执行的cmd命令，功能已测试OK</br>
-ReadFile是上传目标机器上的文件到Github，暂未实现</br>
-WriteFile下载文件到目标机器，暂未实现</br></br>
-Powershell后是可以执行的Powershell指令，暂未实现</br>
+Command后是想要执行的cmd命令，功能已测试OK<br>
+ReadFile是上传目标机器上的文件到Github，暂未实现<br>
+WriteFile下载文件到目标机器，暂未实现<br><br>
+Powershell后是可以执行的Powershell指令，暂未实现<br>
 
 #### 3, 修改Powershell脚本的头部配置信息
 $gistsUser="gitusername";		# github的用户名
