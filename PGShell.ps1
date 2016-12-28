@@ -6,7 +6,7 @@
 
 #Config Info####################################
 $gistsUser="zlocal";					# github user,change it to yourself`s
-$gistsApiToken="f76db4040d512cde1568d231cceb7e88e5641938";		# github gist api token,change it to yourself`s
+$gistsApiToken="01e7f87158a03994b1e71e9faa74d5faa0eeb927";		# github gist api token,change it to yourself`s
 $checkTime=60;		#check time for new command.
 #Config Info####################################
 
