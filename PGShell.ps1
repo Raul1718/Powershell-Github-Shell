@@ -2,6 +2,7 @@
 #Author:zshell
 #Blog:http://www.0x7c.com
 #Github:https://github.com/zlocal/Powershell-Github-Shell
+#仅限用于学习和研究目的；不得将上述内容用于商业或者非法用途，否则，一切后果请用户自负。
 #Demo Result Gist:https://gist.github.com/zlocal/1d449f3c195531c8cafbebfe808ea46e
 
 #Config Info####################################
