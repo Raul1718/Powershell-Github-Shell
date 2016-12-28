@@ -1,5 +1,6 @@
 ###Powershell Github Shell
 	Author:zshell
+	Blog:http://www.0x7c.com
 	Github:https://github.com/zlocal/Powershell-Github-Shell
 	Demo Result Gist:https://gist.github.com/zlocal/1d449f3c195531c8cafbebfe808ea46e
 
