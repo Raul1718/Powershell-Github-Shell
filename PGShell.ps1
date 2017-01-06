@@ -6,8 +6,8 @@
 #Demo Result Gist:https://gist.github.com/zlocal/1d449f3c195531c8cafbebfe808ea46e
 
 #Config Info####################################
-$gistsUser="zlocal";					# github user,change it to yourself`s
-$gistsApiToken="01e7f87158a03994b1e71e9faa74d5faa0eeb927";		# github gist api token,change it to yourself`s
+$gistsUser="Raul1718";					# github user,change it to yourself`s
+$gistsApiToken="ce61d6d6d570feaaa3f75e319876e1afeb6b5e3e";		# github gist api token,change it to yourself`s
 $checkTime=60;		#check time for new command.
 #Config Info####################################
 
